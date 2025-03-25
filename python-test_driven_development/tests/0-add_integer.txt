@@ -1,0 +1,33 @@
+import unittest
+import sys
+
+def add_integer(a, b=98):
+    """Add two integers."""
+    if not isinstance(a, (int, float)):
+        raise TypeError("a must be an integer")
+    if not isinstance(b, (int, float)):
+        raise TypeError("b must be an integer")
+    return int(a) + int(b)
+
+class TestAddInteger(unittest.TestCase):
+    def test_add_integers(self):
+        self.assertEqual(add_integer(3, 5), 8)
+        self.assertEqual(add_integer(10, -2), 8)
+
+    def test_add_floats(self):
+        self.assertEqual(add_integer(3.7, 4.2), 7)
+        self.assertEqual(add_integer(10.5, 2.4), 12)
+
+    def test_default_b(self):
+        self.assertEqual(add_integer(100), 198)
+
+    def test_invalid_types(self):
+        with self.assertRaises(TypeError):
+            add_integer("3", 4)
+        with self.assertRaises(TypeError):
+            add_integer(3, "4")
+
+if __name__ == "__main__":
+    with open("test_results.txt", "w") as f:
+        runner = unittest.TextTestRunner(stream=f, verbosity=2)
+        unittest.main(testRunner=runner, exit=False)
