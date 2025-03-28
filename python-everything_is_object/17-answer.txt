@@ -1,0 +1,22 @@
+The script:
+def increment(n):
+    n.append(4)
+
+l = [1, 2, 3]
+increment(l)
+print(l) # [1, 2, 3, 4]
+
+Explanation:
+l = [1, 2, 3] → l is a list.
+
+increment(l) is called, passing l as an argument.
+
+Inside the increment function:
+
+n.append(4) modifies the same list object that l refers to.
+
+Since lists are mutable, changes inside the function affect the original list.
+
+After the function call, l has been modified to [1, 2, 3, 4].
+
+print(l) prints [1, 2, 3, 4].

@@ -1,0 +1,18 @@
+In Python, small integers (typically between -5 and 256) are interned
+(i.e., stored in a shared memory space) for efficiency. When you assign:
+
+a = 89
+b = 89
+Python recognizes that 89 is within the interned integer range and reuses
+the same object in memory instead of creating a new one.
+
+a = 89
+b = 89
+print(id(a))  # Memory address of a
+print(id(b))  # Memory address of b (same as a)
+
+Take away:
+If the numbers are different (a = 89, b = 100), they are separate objects.
+
+If the numbers are the same and within Python's small integer range (-5 to 256),
+they point to the same object.

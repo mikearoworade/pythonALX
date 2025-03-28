@@ -1,0 +1,6 @@
+Yes, a is a tuple.
+
+When you assign multiple values inside parentheses, like (1, 2), Python creates a tuple.
+
+You can verify this with:
+print(type(a))  # Output: <class 'tuple'>

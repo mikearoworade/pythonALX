@@ -1,0 +1,7 @@
+The code:
+l1 = [1, 2, 3]
+l2 = [1, 2, 3]
+print(l1 is l2) # False
+
+It will return False, because l1 and l2 are two separate objects in memory,
+even though their contents are identical.

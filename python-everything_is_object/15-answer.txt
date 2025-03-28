@@ -1,0 +1,27 @@
+The script:
+l1 = [1, 2, 3]
+l2 = l1
+l1 = l1 + [4]
+print(l2) # [1, 2, 3]
+
+l1 = [1, 2, 3] → l1 is assigned a list [1, 2, 3].
+
+l2 = l1 → l2 now references the same list as l1.
+
+l1 = l1 + [4]
+
+The expression l1 + [4] creates a new list [1, 2, 3, 4], separate from the original [1, 2, 3].
+
+l1 is now reassigned to this new list [1, 2, 3, 4].
+
+However, l2 still points to the original list [1, 2, 3].
+
+print(l2) → Since l2 was never modified, it still holds [1, 2, 3].
+
+
+
+
+
+
+
+

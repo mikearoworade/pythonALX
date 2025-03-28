@@ -1,0 +1,8 @@
+Yes.
+
+In this case, b is assigned the value of a, which means both a and b reference
+the same object in memory. You can verify this using the id() function:
+
+a = 89
+b = a
+print(id(a) == id(b))  # This will print True

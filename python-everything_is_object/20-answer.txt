@@ -1,0 +1,6 @@
+Yes, a is a tuple.
+
+An empty tuple is created using (), so a = () is indeed a tuple.
+
+You can verify this with:
+print(type(a))  # Output: <class 'tuple'>

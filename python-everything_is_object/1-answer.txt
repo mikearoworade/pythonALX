@@ -1,0 +1,2 @@
+x = 42
+print(id(x))  # Prints the memory address of the object x

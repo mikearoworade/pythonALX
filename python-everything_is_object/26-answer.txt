@@ -1,0 +1,9 @@
+The script prints: True
+
+Explanation:
+a = () and b = () are both empty tuples.
+
+In Python, empty tuples are immutable and are interned, meaning Python reuses the
+same empty tuple object in memory.
+
+Since a and b point to the same memory address, a is b evaluates to True.

@@ -1,0 +1,7 @@
+No, a is not a tuple.
+print(type(a))  # Output: <class 'int'>
+
+In Python, (1) is just an integer inside parentheses, not a tuple. To make it a tuple,
+you need to add a comma:
+
+a = (1,)  # This is a tuple

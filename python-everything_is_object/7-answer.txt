@@ -1,0 +1,10 @@
+The line:
+print(s1 is s2) # True
+
+Explanation:
+The is operator checks whether s1 and s2 refer to the same object in memory.
+
+Since s2 is assigned directly to s1 (s2 = s1), both variables reference the same
+string object in memory.
+
+Therefore, s1 is s2 evaluates to True.

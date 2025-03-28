@@ -1,0 +1,10 @@
+The script prints: True
+
+Explanation:
+a = (1) and b = (1) are both just integers because (1) is not a tuple
+(it’s just 1 inside parentheses).
+
+So, a and b both refer to the same integer 1 in memory.
+
+In Python, small integers (usually between -5 and 256) are cached and reused,
+so a is b evaluates to True.

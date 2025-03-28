@@ -1,0 +1,17 @@
+No.
+
+Explanation:
+a is initially a list:
+
+a = [1, 2, 3, 4]
+The list a is stored at memory address 139926795932424.
+
+When you do:
+a = a + [5]
+
+a + [5] creates a new list (it does not modify the original list in place).
+a now points to this new list, which has a different memory address.
+
+Since id(a) gives the memory address of the object a refers to, the last line
+will not print 139926795932424. Instead, it will print the memory address of
+the newly created list.

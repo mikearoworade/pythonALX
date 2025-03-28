@@ -1,0 +1,23 @@
+The script:
+def increment(n):
+    n += 1
+
+a = 1
+increment(a)
+print(a) # 1
+
+Explanation:
+a = 1 → a is assigned the value 1.
+
+increment(a) is called with a (which is 1).
+
+Inside the function:
+
+n += 1 creates a new local variable n, which is incremented to 2.
+
+However, this change only affects n inside the function and does not modify a outside the function.
+
+After the function call, a remains 1 since integers are immutable in Python,
+meaning n += 1 does not modify a itself.
+
+print(a) prints 1.

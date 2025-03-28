@@ -1,0 +1,12 @@
+The script:
+l1 = [1, 2, 3]
+l2 = l1
+l1.append(4)
+print(l2) # [1, 2, 3, 4]
+
+Explanation:
+l1 and l2 refer to the same list object in memory (since l2 = l1).
+
+When l1.append(4) is executed, it modifies the same list object that both l1 and l2 point to.
+
+So when print(l2) is executed, it reflects the change made to l1, resulting in [1, 2, 3, 4].

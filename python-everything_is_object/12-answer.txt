@@ -1,0 +1,9 @@
+l1 = [1, 2, 3]
+l2 = l1
+print(l1 == l2) # True
+
+Explanation:
+The == operator checks if the values of l1 and l2 are equal.
+
+Since l2 is assigned the same object as l1 (l2 = l1), they have the same contents,
+so l1 == l2 returns True.

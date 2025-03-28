@@ -1,0 +1,9 @@
+The code:
+l1 = [1, 2, 3]
+l2 = [1, 2, 3]
+print(l1 == l2) # True
+
+Explanation:
+The == operator checks if the values of l1 and l2 are equal.
+
+Since both lists contain the same elements [1, 2, 3], l1 == l2 returns True.

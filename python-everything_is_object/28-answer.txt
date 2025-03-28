@@ -1,0 +1,20 @@
+Yes.
+
+Explanation:
+a is initially a list:
+
+a = [1, 2, 3]
+
+The list a is stored at memory address 139926795932424.
+id(a) confirms the memory address: 139926795932424
+
+When you do:
+a += [4]
+
+This is equivalent to a.extend([4]).
+
+It modifies the list in place instead of creating a new one.
+
+Since the same list object is modified, id(a) remains unchanged.
+
+Therefore, the last line will print 139926795932424.

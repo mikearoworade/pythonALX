@@ -1,0 +1,12 @@
+The line:
+print(s1 is s2) # True
+
+Explanation:
+
+The is operator checks if two variables reference the same object in memory.
+
+In Python, small strings and commonly used immutable objects (like "Best School")
+are interned (stored in a shared memory location to optimize performance).
+
+Since "Best School" is a simple string, Python might store both s1 and s2 in the
+same memory location, making s1 is s2 return True

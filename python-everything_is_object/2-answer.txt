@@ -1,0 +1,11 @@
+In Python, integers are immutable objects.
+
+each variable is assigned a separate integer object in memory.
+Since 89 and 100 are different values, Python creates two different objects for them.
+
+You can confirm this by checking their id():
+
+a = 89
+b = 100
+print(id(a))  # Memory address of a
+print(id(b))  # Memory address of b (different from a)

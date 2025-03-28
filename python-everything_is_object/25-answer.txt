@@ -1,0 +1,10 @@
+The script prints: False
+
+Explanation:
+a = (1, 2) and b = (1, 2) are two separate tuple objects with the same values.
+
+Unlike empty tuples, Python does not guarantee interning for non-empty tuples.
+
+Since a and b are separate objects in memory, a is b evaluates to False.
+
+However, a == b would return True because they have the same content.

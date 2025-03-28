@@ -1,0 +1,26 @@
+The script:
+def assign_value(n, v):
+    n = v
+
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
+assign_value(l1, l2)
+print(l1) # [1, 2, 3]
+
+Explanation:
+l1 = [1, 2, 3] → l1 is assigned to a list.
+
+l2 = [4, 5, 6] → l2 is another list.
+
+assign_value(l1, l2) is called:
+
+Inside the function, n = v assigns v (which is l2) to n.
+
+However, this only rebinds n inside the function; it does not modify l1 outside the function.
+
+Since Python passes arguments by object reference, reassigning n inside the function does
+not affect l1 in the caller's scope.
+
+After the function call, l1 remains [1, 2, 3].
+
+print(l1) prints [1, 2, 3].

@@ -1,0 +1,8 @@
+The line:
+print(s1 == s2) # True
+
+Explanation:
+The == operator checks value equality, meaning it compares whether s1 and s2
+contain the same string.
+
+Since both s1 and s2 hold the value "Best School", the comparison s1 == s2 returns True.
